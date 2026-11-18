@@ -1,0 +1,27 @@
+/* Busca estilo Spotlight */
+* {
+  font: "Inter 14";
+  fundo: #f5f5f7f0;
+  texto: #1d1d1f;
+  apagado: #86868b;
+  destaque: #0a84ff;
+  background-color: transparent;
+  text-color: @texto;
+}
+window {
+  width: 640px;
+  location: north;
+  anchor: north;
+  y-offset: 160px;
+  border-radius: 14px;
+  background-color: @fundo;
+  padding: 10px;
+}
+mainbox { children: [inputbar, listview]; spacing: 8px; }
+inputbar { children: [entry]; padding: 8px 12px; }
+entry { placeholder: "Buscar apps..."; placeholder-color: @apagado; font: "Inter 18"; }
+listview { lines: 7; scrollbar: false; spacing: 2px; }
+element { padding: 8px 12px; border-radius: 8px; spacing: 12px; }
+element selected.normal { background-color: @destaque; text-color: #ffffff; }
+element-icon { size: 28px; }
+element-text { vertical-align: 0.5; text-color: inherit; }

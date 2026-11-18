@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=Configuração inicial
+Exec=sh -c "$HOME/.local/bin/primeiro-login.sh"
+X-GNOME-Autostart-enabled=true
